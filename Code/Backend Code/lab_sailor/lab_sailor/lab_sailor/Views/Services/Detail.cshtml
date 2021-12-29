@@ -1,0 +1,29 @@
+﻿@model Services;
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Services</h2>
+                <ol>
+                    <li><a asp-controller="home" asp-action="index">Home</a></li>
+                    <li>Services</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- End Breadcrumbs -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <i class="@Model.IconName"></i>
+                        <h4><a asp-controller="services" asp-route-id="@Model.ID" asp-action="detail">ID:@Model.ID @Model.Title</a></h4>
+                        <p>@Model.Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->

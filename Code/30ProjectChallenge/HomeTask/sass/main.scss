@@ -1,0 +1,59 @@
+$color-first: rgb(78, 112, 15);
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.dragdropcontainer .dropContainer {
+    height: 250px;
+    width: 100%;
+    border: 1px solid;
+}
+
+img {
+    width: 20%;
+}
+
+.right-side {
+    margin: 2vh;
+    gap: 2px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-first;
+}
+
+.right-side select {
+    width: 490px;
+}
+
+.left-side {
+    float: left;
+    margin: 2vh;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side select {
+    width: 485px;
+}
+
+.right-side label {
+    width: 485px;
+}
+
+.left-side label {
+    width: 485px;
+}
+
+.right-side .form-control {
+    width: 490px;
+    position: absolute;
+    bottom: 64%;
+    right: 14%;
+}
+
+.col-lg-6 {
+    width: 100%!important;
+}

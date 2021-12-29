@@ -1,0 +1,14 @@
+{
+  "name": "aasdasd",
+  "version": "1.0.0",
+  "description": "asd",
+  "main": "index.js",
+  "scripts": {
+   "sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

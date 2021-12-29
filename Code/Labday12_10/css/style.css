@@ -1,0 +1,113 @@
+button{
+    padding: 20px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-right: 300px;
+}
+#windows
+{
+background-color:#00a2ed;
+transition: 0.3s;
+
+/* margin-rig: 100px; */
+}
+#windows:hover{
+    background-color:#007bb4 ;
+    transform: scale(1.1);
+}
+button i{
+    font-size: 30px;
+}
+#ubuntu{
+    background-color: red;
+    transition: 0.3s;
+}
+#ubuntu:hover{
+    background-color:rgb(197, 3, 3) ;
+  
+}
+#redhat{
+    background-color: orangered;
+    transition: 0.3s;
+}
+#redhat:hover{
+    background-color:rgb(185, 49, 0) ;
+   
+}
+#apple{
+    background-color: gray;
+    transition: 0.3s;
+}
+#apple:hover{
+    background-color:rgb(90, 90, 90);
+    
+}
+.col-8{
+    margin: 30px auto;
+}
+.windows-content{
+    margin: 0 auto;
+    background-color: #00a2ed;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: none;
+}
+.windows-content-text{
+    color: white;
+}
+.windows-content-icon{
+    color: white;
+    font-size: 120px;
+}
+.ubuntu-content{
+    margin: 0 auto;
+    background-color: red;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: none;
+}
+.ubuntu-content-text{
+    color: white;
+}
+.ubuntu-content-icon{
+    color: white;
+    font-size: 120px;
+}
+.redhat-content{
+    margin: 0 auto;
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: none;
+}
+.redhat-content-text{
+    color: white;
+}
+.redhat-content-icon{
+    color: white;
+    font-size: 120px;
+}
+.apple-content{
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    margin-left: 50px;
+}
+.apple-content-text{
+    color: white;
+}
+.apple-content-icon{
+    color: white;
+    font-size: 120px;
+}
+.active{
+    display: block;
+    transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}

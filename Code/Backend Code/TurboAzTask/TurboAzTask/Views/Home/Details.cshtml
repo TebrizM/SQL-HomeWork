@@ -1,0 +1,23 @@
+﻿@model Car
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+`
+<div class="col-4 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+    <div class="card m-5 bg-secondary" style="width: 18rem;">
+        <img class="card-img-top" src="" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title text-uppercase">@Model.BrandName</h5>
+            <p>ID: @Model.Id</p>
+            <p class="card-text text-warning">
+                @Model.Year @Model.ModelName
+            </p>
+            <p class="">@Model.Price <span>$</span></p>
+
+            <a class="btn btn-danger" asp-controller="Home" asp-action="Index">Go back</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,201 @@
+$primary-color: #13c4a1;
+$secondary-color: #ff845d;
+$third-color: #ffffff;
+$hover-color: #080a3c;
+body {
+  font-size: 20px;
+  font-weight: normal;
+  section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    header {
+      .container {
+        .row {
+          .dots{
+            i{
+              position: absolute;top: 9%;
+              left: 76%;
+
+            }
+          }
+          .col-lg-12 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: space-around;
+            align-items: center;
+
+            .right-side {
+              
+              position: relative;
+              left: 45%;
+              
+              ul {
+                display: flex;
+                
+                list-style: none;
+                justify-content: space-between;
+                padding: 10px;
+                gap: 70px;
+                li {
+                  ul {
+                   
+                    border: none;
+                    visibility: hidden;
+                    height: 0%;
+                    overflow: hidden;
+                    transition: 0.3s linear;
+                    opacity: 0;
+                  }
+                  position: relative;
+                  .with {
+                    display: inline;
+                    position: absolute;
+                    top: 50px;
+                    width: 390px;
+                    left: -10px;
+                    
+                    border-radius: 5px;
+                    h3 {
+                      border-top: 1px $primary-color solid;
+                    }
+                    li {
+                      a {
+                        &:hover {
+                          color: $primary-color;
+                        }
+                        line-height: 50px;
+                        padding-left: 0;
+                        padding-right: 0;
+                        border-bottom: 1px dashed rgba(128, 128, 128, 0.548);
+                        color: #4a6f8a;
+                      }
+                    }
+                  }
+                  .without {
+                    display: inline-block;
+                    position: absolute;
+                    top: 50px;
+                    width: 350px;
+                    left: 355px;
+
+                    border-radius: 5px;
+                    h3 {
+                      border-top: solid 1px $primary-color;
+                    }
+                    li {
+                      a {
+                        &:hover {
+                          color: $primary-color;
+                        }
+                        line-height: 50px;
+                        border-bottom: 1px dashed rgba(128, 128, 128, 0.548);
+                        color: #4a6f8a;
+                      }
+                    }
+                  }
+                  color: rgb(0, 0, 0) !important;
+                
+                  &:hover ul {
+                    height: 480px;
+                    opacity: 1;
+                    visibility:visible;
+                  }
+
+                  a {
+                    &:hover {
+                      color: $primary-color;
+                    }
+                    color: grey;
+                    transition: all 0.4s ease-in-out;
+                    text-decoration: none;
+                  }
+                }
+                .pagedown {
+                  &:hover ul {
+                    height: 550px;
+                    opacity: 1;
+                    z-index: 13;
+                  }
+                 
+                  ul {
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    top: 60px;
+                    height: 0%;
+                    overflow: hidden;
+                   
+                    transition: 0.3s ease;
+                    z-index: -6;
+                    
+                    
+                  }
+                }
+              }
+
+              .free {
+                &:hover {
+                  background-color: $hover-color;
+                  color: $third-color;
+                }
+                position: absolute;
+                z-index: 20;
+                left: 102%;
+                top: 18px;
+                background-color: $primary-color;
+                border: none;
+                width: 165px;
+                height: 52px;
+                color: white;
+                border-radius: 6px;
+                width: 180px;
+                transition: all 0.5s ease-in-out;
+                i {
+                  position: absolute;
+                  left: 16%;
+                }
+              }
+              .login {
+                &:hover {
+                  background-color: $hover-color;
+                  color: $third-color;
+                }
+                transition: all 0.5s ease-in-out;
+                position: absolute;
+                z-index: 20;
+                left: 134%;
+
+                top: 18px;
+                background-color: white;
+                border: black 1px solid;
+                width: 142px;
+                height: 52px;
+                border-radius: 6px;
+                i {
+                  position: absolute;
+                  left: 20%;
+                  top: 16px;
+                  color: $secondary-color;
+                  font-size: large;
+                }
+              }
+              
+            }
+            .left-side {
+              .logo{
+
+                text-align: left;
+                position: absolute;
+                left: 50px;
+                top: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
